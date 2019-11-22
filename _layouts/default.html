@@ -22,17 +22,17 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
+    <header id="header">
+        <div id="uob-logo">
+            <a href="https://www.birmingham.ac.uk/index.aspx"><img src="/static/core/images/uob-logo.svg" alt="University of Birmingham Logo"></a>
+        </div>
+        <div id="title">
+            <h1><a href="/">{{ page.title | default: site.title | default: site.github.repository_name }}</a></h1>
+        </div>
+        <div id="bear-logo">
+            <a href="https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/index.aspx"><img src="/static/core/images/bear-logo.svg" alt="Birmingham Environment for Academic Research (BEAR) Logo"></a>
+        </div>
+    </div>
 
     <main id="content" class="main-content" role="main">
       {{ content }}      
