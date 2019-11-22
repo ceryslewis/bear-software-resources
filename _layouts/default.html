@@ -47,5 +47,11 @@
               <a href="/accessibility">Accessibility</a>
           </p>
       </footer>
+      <script type="text/javascript">
+      var min = $( window ).height() - ($("#header").height() + $("#footer").height());
+      if(($("#main").height() < min) && ($("#side").height() < min)){
+          $("#footer").addClass("shortpage");
+      }
+      </script>
   </body>
 </html>
