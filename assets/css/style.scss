@@ -3,6 +3,14 @@
 
 @import "{{ site.theme }}";
 
+#header {
+    overflow: hidden;
+    background-color: #10590c;
+    top: 0;
+    left: 0;
+    padding: 1.3em 1em;
+}
+
 #footer {
     color: #fff;
     background-color: #10590c;
