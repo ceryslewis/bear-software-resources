@@ -3,6 +3,12 @@
 
 @import "{{ site.theme }}";
 
+
+#container {
+    min-height: 100%;
+    position: relative;
+}
+
 #header {
     overflow: hidden;
     background-color: #10590c;
