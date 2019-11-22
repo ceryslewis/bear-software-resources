@@ -3,14 +3,17 @@
 
 @import "{{ site.theme }}";
 
-#footer.shortpage {
-    overflow: hidden;
+#footer {
     background-color: #10590c;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     height: 4em;
     padding: 0.5em 0;
     word-spacing: .08em;
     text-align: center;
+}
+
+#footer.shortpage {
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
 }
