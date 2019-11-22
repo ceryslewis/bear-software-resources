@@ -11,6 +11,20 @@
     padding: 1.3em 1em;
 }
 
+#header a {
+    color: white;
+}
+
+#bear-logo img {
+    float: right;
+}
+
+#uob-logo img, 
+#bear-logo img {
+    height: 3.2em;
+    max-width: 90%;
+}
+
 #footer {
     color: #fff;
     background-color: #10590c;
