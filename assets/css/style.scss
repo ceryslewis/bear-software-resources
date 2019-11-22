@@ -2,3 +2,15 @@
 ---
 
 @import "{{ site.theme }}";
+
+#footer {
+    overflow: hidden;
+    background-color: #574b90;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4em;
+    padding: 0.5em 0;
+    word-spacing: .08em;
+    text-align: center;
+}
