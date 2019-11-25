@@ -29,6 +29,10 @@
     float: left;
 }
 
+#title h1 a, #title h1 a:hover {
+    text-decoration: none;
+}
+
 #uob-logo, #bear-logo {
     display: block;
     width: 25%;
