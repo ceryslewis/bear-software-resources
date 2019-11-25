@@ -3,6 +3,9 @@
 
 @import "{{ site.theme }}";
 
+.dd {
+    display: none;
+}
 
 #container {
     min-height: 100%;
