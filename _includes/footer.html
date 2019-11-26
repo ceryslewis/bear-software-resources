@@ -10,8 +10,10 @@
     </footer>
     </div>
     <script type="text/javascript">
-    var min = $( window ).height() - ($("#header").height() + $("#footer").height());
-    if($("#content").height() < min) {
-        $("#footer").addClass("shortpage");
-    }
+    $( document ).ready(function() {
+        var min = $( window ).height() - ($("#header").height() + $("#footer").height());
+        if($("#content").height() < min) {
+            $("#footer").addClass("shortpage");
+        }
+    });
     </script>
