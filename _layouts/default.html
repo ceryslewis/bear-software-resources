@@ -4,38 +4,18 @@
   <body>
     <div id="container">
     <a id="skip-to-content" href="#content" class="dd">Skip to the content.</a>
-
-    <header id="header">
-        <div id="uob-logo">
-            <a href="https://www.birmingham.ac.uk/index.aspx"><img src="https://bear-apps.bham.ac.uk/static/core/images/uob-logo.svg" alt="University of Birmingham Logo"></a>
-        </div>
-        <div id="title">
-            <h1><a href="/bear-software-resources/">BEAR Resources</a></h1>
-        </div>
-        <div id="bear-logo">
-            <a href="https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/index.aspx"><img src="https://bear-apps.bham.ac.uk/static/core/images/bear-logo.svg" alt="Birmingham Environment for Academic Research (BEAR) Logo"></a>
-        </div>
-    </header>
-
+    {% include header.html %}
     <main id="content" class="main-content" role="main">
       {{ content }}      
     </main>
-    <footer id="footer">
-          <p>Developed by the <a href="https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/rsg/research-software-group.aspx">Research Software Group</a> at <a href="http://www.bham.ac.uk">The University of Birmingham</a></p>
-          <p>
-              <a href="https://www.birmingham.ac.uk/privacy/index.aspx">Privacy</a> |
-              <a href="https://www.birmingham.ac.uk/legal/index.aspx">Legal</a> |
-              <a href="https://www.birmingham.ac.uk/university/governance/policies-regs/information/index.aspx">Freedom of Information</a> |
-              <a href="/cookies">Cookies</a> |
-              <a href="/accessibility">Accessibility</a>
-          </p>
-      </footer>
-    </div>
-      <script type="text/javascript">
-      var min = $( window ).height() - ($("#header").height() + $("#footer").height());
-      if($("#content").height() < min){
-          $("#footer").addClass("shortpage");
-      }
-      </script>
+    {% include footer.html %}
+     <script type="text/javascript">
+    $( document ).ready(function() {
+        var min = $( window ).height() - ($("#header").height() + $("#footer").height());
+        if($("#content").height() < min) {
+            $("#footer").addClass("shortpage");
+        }
+    });
+    </script>
   </body>
 </html>
