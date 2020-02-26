@@ -1,7 +1,8 @@
+{% assign navigation = site.data.navigation[include.nav] %}
 
-<nav>
+<nav class="nav__list">
   <ul>
-    {% for nav in site.data.nav %}
+    {% for nav in navigation %}
       {% if nav.subcategories != null %}
         <li>
           <a href="{{ site.url }}{{ nav.url }}">{{ nav.title }} ▼</a>
