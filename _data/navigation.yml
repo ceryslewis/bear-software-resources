@@ -1,6 +1,6 @@
 - title: "Home"
   href: "/"
-  
+
 - title: "Topic areas"
   subcategories:
     - subtitle: "Databases"
@@ -9,7 +9,6 @@
       subhref: "/topics/code/"
     - subtitle: "HPC"
       subhref: "/topics/hpc/"
-    
-  - title: "Guide"
+      
+- title: "Guide"
     url: /markdown/
-
