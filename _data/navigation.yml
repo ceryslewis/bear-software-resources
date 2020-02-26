@@ -4,11 +4,8 @@
 - title: "Topic areas"
   subcategories:
     - subtitle: "Databases"
-      subhref: "/topics/database/"
+      subhref: "#"
     - subtitle: "Coding"
-      subhref: "/topics/code/"
+      subhref: "#"
     - subtitle: "HPC"
-      subhref: "/topics/hpc/"
-      
-- title: "Guide"
-    url: /markdown/
+      subhref: "#"
