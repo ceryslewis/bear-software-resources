@@ -1,11 +1,7 @@
-    
 - title: "Home"
   href: "/"
-
-# main links links
-main:
+  
 - title: "Topic areas"
-  url: /topics/
   subcategories:
     - subtitle: "Databases"
       subhref: "/topics/database/"
