@@ -1,11 +1,19 @@
+    
 - title: "Home"
   href: "/"
 
+# main links links
+main:
 - title: "Topic areas"
+  url: /topics/
   subcategories:
     - subtitle: "Databases"
-      subhref: "#"
+      subhref: "/topics/database/"
     - subtitle: "Coding"
-      subhref: "#"
+      subhref: "/topics/code/"
     - subtitle: "HPC"
-      subhref: "#"
+      subhref: "/topics/hpc/"
+    
+  - title: "Guide"
+    url: /markdown/
+
