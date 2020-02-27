@@ -1,6 +1,6 @@
 <nav>
   <ul>
-    {% for nav in site.data.nav %}
+    {% for nav in site.data.navigation %}
       {% if nav.subcategories != null %}
         <li>
           <a href="{{ site.url }}{{ nav.url }}">{{ nav.title }} ▼</a>
