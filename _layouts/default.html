@@ -4,8 +4,8 @@
   <body>    
     <div id="container">
     <a id="skip-to-content" href="#content" class="dd">Skip to the content.</a>
+    {% include nav.html %}
     <main id="content" class="main-content" role="main">
-      {% include nav.html %}
       {{ content }}      
     </main>
     {% include footer.html %}
