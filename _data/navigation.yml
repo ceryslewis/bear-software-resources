@@ -1,11 +1,7 @@
-- title: "Home"
-  href: "/"
-  description:
-
 # main links links
 - title: "Topic areas"
   href: "/topics/"
-  description:
+  description: ""
   subcategories:
     - subtitle: "Databases"
       subhref: "/topics/database/"

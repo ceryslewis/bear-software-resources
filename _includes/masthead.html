@@ -22,7 +22,7 @@
             </div>
 
             <nav id="site-nav" class="greedy-nav">
-                <div class="masthead__menu">
+                <div class="masthead__menu links_menu">
                     <ul class="visible-links">
                         {% for category in site.data.navigation %}
                             {% if category.href contains '://' %}
@@ -46,7 +46,7 @@
                                         {% endfor %}
                                     </ul>
                                 {% else %}
-                                    <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ link.title }}</a>
+                                    <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
                                 {% endif %}
                             </li>
                         {% endfor %}

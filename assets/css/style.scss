@@ -90,10 +90,11 @@ table { margin-bottom: 20px; }
     max-width: 100%;
 }
 
-.masthead__menu {
+.links_menu {
     background: white;
     color: green;
+    border: 1px solid red;
     position: absolute;
-    top: 50px;
+    top: 100px;
     z-index: 1000;
 }
