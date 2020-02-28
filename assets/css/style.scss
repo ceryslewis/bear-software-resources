@@ -18,6 +18,7 @@
     background-color: #10590c;
     top: 0;
     left: 0;    
+    padding: 1.3em 1em;
 }
 
 #header a {
@@ -80,3 +81,11 @@ table { margin-bottom: 20px; }
 
 #content {  width: 80%; }
 
+.masthead__inner-wrap{
+    max-width:1600px;
+}
+
+#uob-logo a img, #bear-logo a img {
+    height: 3.2em;
+    max-width: 90%;
+}
