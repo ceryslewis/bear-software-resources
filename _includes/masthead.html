@@ -34,7 +34,7 @@
                                 {% if site.data.navigation.subcategories != null %}
                                     <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
-                                        {% for subcategory in site.data.navigation..main.subcategories %}
+                                        {% for subcategory in site.data.navigation.subcategories %}
                                             {% if subcategory.subhref contains '://' %}
                                                 {% assign url = subcategory.subhref %}
                                             {% else %}
@@ -46,7 +46,7 @@
                                         {% endfor %}
                                     </ul>
                                 {% else %}
-                                    <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+                                    <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ link.title }}</a>
                                 {% endif %}
                             </li>
                         {% endfor %}
