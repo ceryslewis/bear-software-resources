@@ -11,7 +11,7 @@
                 <div id="title">
                     {% unless site.site_title_url == empty %}
                     <h1><a href="{{ site.site_title_url }}">{{ site.site_title }}</a></h1>
-                    {% else%}
+                    {% else %}
                     <h1>{{ site.site_title }}</h1>
                     {% endif %}
                 </div>
@@ -25,15 +25,15 @@
             <nav id="site-nav" class="greedy-nav">
                 <div class="masthead__menu">>
                     <ul class="visible-links">
-                        {% for link in site.data.navigation.main %}
-                            {% if link.href contains '://' %}
-                                {% assign url = link.href %}
+                        {% for category in site.data.navigation.main %}
+                            {% if category.href contains '://' %}
+                                {% assign url = category.href %}
                             {% else %}
-                                {% assign url = link.href | relative_url %}
+                                {% assign url = category.href | relative_url %}
                             {% endif %}
                             <li class="masthead__menu-item">
                                 {% if site.data.navigation.main.subcategories != null %}
-                                    <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }} ▼</a>
+                                    <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
                                         {% for subcategory in site.data.navigation..main.subcategories %}
                                         {% if subcategory.subhref contains '://' %}
