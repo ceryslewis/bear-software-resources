@@ -24,7 +24,7 @@
             <nav id="site-nav" class="greedy-nav">
                 <div class="masthead__menu">
                     <ul class="visible-links">
-                        {% for category in site.data.navigation %}
+                        {% for category in site.data %}
                             {% if category.href contains '://' %}
                                 {% assign url = category.href %}
                             {% else %}

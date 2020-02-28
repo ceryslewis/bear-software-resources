@@ -3,17 +3,16 @@
   description:
 
 # main links links
-- main:
-  - title: "Topic areas"
-    href: "/topics/"
-    description:
-    subcategories:
-      - subtitle: "Databases"
-        subhref: "/topics/database/"
-        subdescription:
-      - subtitle: "Coding"
-        subhref: "/topics/coding/"
-        subdescription:
-      - subtitle: "HPC"
-        subhref: "/topics/hpc/"
-        subdescription:
+- title: "Topic areas"
+  href: "/topics/"
+  description:
+  subcategories:
+    - subtitle: "Databases"
+      subhref: "/topics/database/"
+      subdescription:
+    - subtitle: "Coding"
+      subhref: "/topics/coding/"
+      subdescription:
+    - subtitle: "HPC"
+      subhref: "/topics/hpc/"
+      subdescription:
