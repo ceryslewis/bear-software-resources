@@ -1,21 +1,21 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
 <header id="header" class="masthead">
     <div class="masthead__inner-wrap">
-        <div>
-            {% unless logo_path == empty %}
-            <div id="uob-logo">
-                <a class="site-logo" href="{{ site.uob_logo_url }}"><img src="{{ site.uob_logo_path }}" alt="{{ uob_logo_alt }}"></a>
-            </div>
-            {% endunless %}
-            <a class="title" href="{{ '/' | relative_url }}">
-                {{ site.masthead_title | default: site.title }}
-                {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-            </a>
-            <div id="bear-logo">
-                <a href="{{ site.bear_logo_path }}"><img src="{{ site.bear_logo }}" alt="{{ bear_logo_alt }}">
+        <nav id="site-nav">
+            <div>
+                {% unless logo_path == empty %}
+                <div id="uob-logo">
+                    <a class="site-logo" href="{{ site.uob_logo_url }}"><img src="{{ site.uob_logo_path }}" alt="{{ uob_logo_alt }}"></a>
+                </div>
+                {% endunless %}
+                <a class="title" href="{{ '/' | relative_url }}">
+                    {{ site.masthead_title | default: site.title }}
+                    {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
                 </a>
-            </div>
-            <nav id="site-nav">
+                <div id="bear-logo">
+                    <a href="{{ site.bear_logo_path }}"><img src="{{ site.bear_logo }}" alt="{{ bear_logo_alt }}">
+                    </a>
+                </div>
                 <div class="masthead__menu">>
                     <ul class="visible-links">
                         {%- for link in site.data.navigation.main -%}
