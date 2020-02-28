@@ -1,33 +1,55 @@
 {% capture logo_path %}{{ site.logo }}{% endcapture %}
-<header id="header" class="masthead">
+<div id="header" class="masthead">
     <div class="masthead__inner-wrap">
-        <nav id="site-nav">
+        <div class="masthead__menu">
             <div>
-                {% unless logo_path == empty %}
+                {% unless site.uob_logo_url == empty %}
                 <div id="uob-logo">
                     <a class="site-logo" href="{{ site.uob_logo_url }}"><img src="{{ site.uob_logo_path }}" alt="{{ uob_logo_alt }}"></a>
                 </div>
                 {% endunless %}
-                <a class="title" href="{{ '/' | relative_url }}">
-                    {{ site.masthead_title | default: site.title }}
-                    {% if site.subtitle %}<span class="site-subtitle">{{ site.subtitle }}</span>{% endif %}
-                </a>
-                <div id="bear-logo">
-                    <a href="{{ site.bear_logo_path }}"><img src="{{ site.bear_logo }}" alt="{{ bear_logo_alt }}">
-                    </a>
+                <div id="title">
+                    {% unless site.site_title_url == empty %}
+                    <h1><a href="{{ site.site_title_url }}">{{ site.site_title }}</a></h1>
+                    {% else%}
+                    <h1>{{ site.site_title }}</h1>
+                    {% endif %}
                 </div>
+                {% unless site.bear_logo_url == empty %}
+                <div id="bear-logo">
+                    <a href="{{ site.bear_logo_url }}"><img src="{{ site.bear_logo_path }}" alt="{{ bear_logo_alt }}">
+                </div>
+                {% endunless %}
+            </div>
+
+            <nav id="site-nav" class="greedy-nav">
                 <div class="masthead__menu">>
                     <ul class="visible-links">
-                        {%- for link in site.data.navigation.main -%}
-                        {%- if link.url contains '://' -%}
-                        {%- assign url = link.url -%}
-                        {%- else -%}
-                        {%- assign url = link.url | relative_url -%}
-                        {%- endif -%}
-                        <li class="masthead__menu-item">
-                            <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
-                        </li>
-                        {%- endfor -%}
+                        {% for link in site.data.navigation.main %}
+                            {% if link.href contains '://' %}
+                                {% assign url = link.href %}
+                            {% else %}
+                                {% assign url = link.href | relative_url %}
+                            {% endif %}
+                            <li class="masthead__menu-item">
+                                {% if site.data.navigation.main.subcategories != null %}
+                                    <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }} ▼</a>
+                                    <ul>
+                                        {% for subcategory in site.data.navigation..main.subcategories %}
+                                        {% if subcategory.subhref contains '://' %}
+                                        {% assign url = subcategory.subhref %}
+                                        {% else %}
+                                        {% assign url = subcategory.subhref | relative_url %}
+                                        {% endif %}
+                                        <li class="masthead__submenu-item">
+                                            <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
+                                        </li>
+                                    </ul>
+                                {% else %}
+                                    <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
                     </ul>
                     {% if site.search == true %}
                     <button class="search__toggle" type="button">

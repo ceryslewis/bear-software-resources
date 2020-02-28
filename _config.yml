@@ -10,15 +10,19 @@ repository               : "ceryslewis.github.io/bear-software-resources"
 title_separator          : "-"
 lang                     : "en-GB"
 masthead_title           : "BEAR Resources"
+
 site_title               : "BEAR Resources"
 site_subtitle            : ""
 site_title_url           : "/bear-software-resources/"
+
 bear_logo_path           : "https://bear-apps.bham.ac.uk/static/core/images/bear-logo.svg" # path of logo image to display in the masthead
 bear_logo_url            : "https://intranet.birmingham.ac.uk/it/teams/infrastructure/research/bear/index.aspx"
 bear_logo_alt            : "Birmingham Environment for Academic Research (BEAR) Logo"
+
 uob_logo_path            : "https://bear-apps.bham.ac.uk/static/core/images/uob-logo.svg" # path of logo image to display in the masthead
 uob_logo_alt             : "University of Birmingham logo"
 uob_logo_url             : "https://www.birmingham.ac.uk/index.aspx"
+
 search                   : # true, false (default)
 search_full_content      : # true, false (default)
 search_provider          : # lunr (default), algolia, google

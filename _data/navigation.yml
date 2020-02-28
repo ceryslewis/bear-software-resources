@@ -1,16 +1,18 @@
 - title: "Home"
   href: "/"
   description:
+
 - main:
   - title: "Topic areas"
+    href: "/topics/"
     description:
     subcategories:
       - subtitle: "Databases"
-        subhref: "#"
+        subhref: "/topics/database/"
         subdescription:
       - subtitle: "Coding"
-        subhref: "#"
+        subhref: "/topics/coding/"
         subdescription:
       - subtitle: "HPC"
-        subhref: "#"
+        subhref: "/topics/hpc/"
         subdescription:
