@@ -89,3 +89,11 @@ table { margin-bottom: 20px; }
     height: 3.2em;
     max-width: 100%;
 }
+
+#masthead__menu {
+    background: white;
+    color: green;
+    position: absolute;
+    top: 50px;
+    z-index: 1000;
+}
