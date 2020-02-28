@@ -3,7 +3,7 @@
   description:
 
 # main links links
-main:
+- main:
   - title: "Topic areas"
     href: "/topics/"
     description:
