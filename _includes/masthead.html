@@ -36,14 +36,15 @@
                                     <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
                                         {% for subcategory in site.data.navigation..main.subcategories %}
-                                        {% if subcategory.subhref contains '://' %}
-                                        {% assign url = subcategory.subhref %}
-                                        {% else %}
-                                        {% assign url = subcategory.subhref | relative_url %}
-                                        {% endif %}
-                                        <li class="masthead__submenu-item">
-                                            <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
-                                        </li>
+                                            {% if subcategory.subhref contains '://' %}
+                                                {% assign url = subcategory.subhref %}
+                                            {% else %}
+                                                {% assign url = subcategory.subhref | relative_url %}
+                                            {% endif %}
+                                            <li class="masthead__submenu-item">
+                                                <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
+                                            </li>
+                                        {% endfor %}
                                     </ul>
                                 {% else %}
                                     <a href="{{ url }}" {% if link.description %}title="{{ link.description }}"{% endif %}>{{ link.title }}</a>
