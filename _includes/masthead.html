@@ -24,14 +24,14 @@
             <nav id="site-nav" class="greedy-nav">
                 <div class="masthead__menu">
                     <ul class="visible-links">
-                        {% for category in site.data %}
+                        {% for category in site.data.navigation %}
                             {% if category.href contains '://' %}
                                 {% assign url = category.href %}
                             {% else %}
                                 {% assign url = category.href | relative_url %}
                             {% endif %}
                             <li class="masthead__menu-item">
-                                {% if site.data.navigation.main.subcategories != null %}
+                                {% if site.data.navigation.subcategories != null %}
                                     <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
                                         {% for subcategory in site.data.navigation..main.subcategories %}
