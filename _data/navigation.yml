@@ -2,9 +2,11 @@
 - title: "About BEAR Resources"
   href: "/about/"
   description: ""
+  multilevel: false
 - title: "Topic areas"
   href: "/topics/"
   description: ""
+  multilevel: true
   subcategories:
     - subtitle: "Databases"
       subhref: "/topics/database/"
@@ -18,3 +20,4 @@
 - title: "Guides"
   href: "/guides/"
   description: ""
+  multilevel: false

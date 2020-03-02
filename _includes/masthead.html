@@ -31,10 +31,10 @@
                                 {% assign url = category.href | relative_url %}
                             {% endif %}
                             <li class="masthead__menu-item">
-                                {% if site.data.navigation.subcategories %}
+                                {% if site.data.navigation.category.multilevel %}
                                     <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
-                                        {% for subcategory in site.data.navigation.subcategories %}
+                                        {% for subcategory in site.data.navigation.category.subcategories %}
                                             {% if subcategory.subhref contains '://' %}
                                                 {% assign url = subcategory.subhref %}
                                             {% else %}
