@@ -31,7 +31,7 @@
                                 {% assign url = category.href | relative_url %}
                             {% endif %}
                             <li class="masthead__menu-item">
-                                {% if site.data.navigation.subcategories == None %}
+                                {% if site.data.navigation.subcategories %}
                                     <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                                     <ul>
                                         {% for subcategory in site.data.navigation.subcategories %}
