@@ -1,4 +1,7 @@
 # main links links
+- title: "About BEAR Resources"
+  href: "/about/"
+  description: ""
 - title: "Topic areas"
   href: "/topics/"
   description: ""
@@ -12,3 +15,6 @@
     - subtitle: "HPC"
       subhref: "/topics/hpc/"
       subdescription:
+- title: "Guides"
+  href: "/guides/"
+  description: ""
