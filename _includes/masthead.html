@@ -1,6 +1,5 @@
 <header id="header">
-    <div class="masthead__inner-wrap">
-
+    <div>
         <div class="masthead__logos">
             {% unless site.uob_logo_url == empty %}
             <div id="uob-logo">
@@ -26,14 +25,12 @@
             <ul class='visible-links'>
                 <li></li>
             {% for category in site.data.navigation %}
-                {% if category.href contains '://' %}
+                {% if category.href contains '#' %}
                     {% assign url = category.href %}
-                {% else %}
-                    {% assign url = category.href | relative_url %}
                 {% endif %}
                     <li>
                     {% if category.multilevel %}
-                        <a href="#{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
+                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                         <ul class="dd">
                             {% for subcategory in category.subcategories %}
                                 {% if subcategory.subhref contains '://' %}
