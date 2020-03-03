@@ -1,61 +1,59 @@
 <header id="header">
     <div class="masthead__inner-wrap">
 
-        <div class="">
-            <div>
-                {% unless site.uob_logo_url == empty %}
-                <div id="uob-logo">
-                    <a href="{{ site.uob_logo_url }}"><img src="{{ site.uob_logo_path }}" alt="{{ uob_logo_alt }}"></a>
-                </div>
-                {% endunless %}
-                <div id="title">
-                    {% unless site.site_title_url == empty %}
-                    <h1><a href="{{ site.site_title_url }}">{{ site.site_title }}</a></h1>
-                    {% else %}
-                    <h1>{{ site.site_title }}</h1>
-                    {% endunless %}
-                </div>
-                {% unless site.bear_logo_url == empty %}
-                <div id="bear-logo">
-                    <a href="{{ site.bear_logo_url }}"><img src="{{ site.bear_logo_path }}" alt="{{ bear_logo_alt }}"></a>
-                </div>
+        <div class="masthead__logos">
+            {% unless site.uob_logo_url == empty %}
+            <div id="uob-logo">
+                <a href="{{ site.uob_logo_url }}"><img src="{{ site.uob_logo_path }}" alt="{{ uob_logo_alt }}"></a>
+            </div>
+            {% endunless %}
+            <div id="title">
+                {% unless site.site_title_url == empty %}
+                <h1><a href="{{ site.site_title_url }}">{{ site.site_title }}</a></h1>
+                {% else %}
+                <h1>{{ site.site_title }}</h1>
                 {% endunless %}
             </div>
-
-            <nav class="greedy-nav">
-                <button><div class="hamburger"></div></button>
-                <ul class='visible-links'>
-
-                {% for category in site.data.navigation %}
-                    {% if category.href contains '://' %}
-                        {% assign url = category.href %}
-                    {% else %}
-                        {% assign url = category.href | relative_url %}
-                    {% endif %}
-                        <li>
-                        {% if category.multilevel %}
-                            <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
-                            <ul>
-                                {% for subcategory in category.subcategories %}
-                                    {% if subcategory.subhref contains '://' %}
-                                        {% assign url = subcategory.subhref %}
-                                    {% else %}
-                                        {% assign url = subcategory.subhref | relative_url %}
-                                    {% endif %}
-                                    <li class="">
-                                        <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
-                                    </li>
-                                {% endfor %}
-                            </ul>
-                        {% else %}
-                            <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
-                        {% endif %}
-                    </li>
-                    {% endfor %}
-                </ul>
-                <ul class="hidden-links hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</ul>
-            </nav>
-
+            {% unless site.bear_logo_url == empty %}
+            <div id="bear-logo">
+                <a href="{{ site.bear_logo_url }}"><img src="{{ site.bear_logo_path }}" alt="{{ bear_logo_alt }}"></a>
+            </div>
+            {% endunless %}
         </div>
+
+        <nav class="greedy-nav">
+            <button><div class="hamburger"></div></button>
+            <ul class='visible-links'>
+
+            {% for category in site.data.navigation %}
+                {% if category.href contains '://' %}
+                    {% assign url = category.href %}
+                {% else %}
+                    {% assign url = category.href | relative_url %}
+                {% endif %}
+                    <li>
+                    {% if category.multilevel %}
+                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
+                        <ul>
+                            {% for subcategory in category.subcategories %}
+                                {% if subcategory.subhref contains '://' %}
+                                    {% assign url = subcategory.subhref %}
+                                {% else %}
+                                    {% assign url = subcategory.subhref | relative_url %}
+                                {% endif %}
+                                <li class="">
+                                    <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% else %}
+                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
+                    {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
+            <ul class="hidden-links hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</ul>
+        </nav>
+
     </div>
 </header>
