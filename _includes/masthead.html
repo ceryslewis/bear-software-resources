@@ -33,7 +33,7 @@
                 {% endif %}
                     <li>
                     {% if category.multilevel %}
-                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
+                        <a href="#{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
                         <ul class="dd">
                             {% for subcategory in category.subcategories %}
                                 {% if subcategory.subhref contains '://' %}
