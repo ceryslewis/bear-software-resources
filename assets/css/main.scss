@@ -57,7 +57,9 @@ a {
 }
 
 .greedy-nav {
-  position: relative;
+  position: absolute;
+  line-height: 1px;
+  top: -1px
   width: 100%;
   min-width: 250px;
   background: #fff;
