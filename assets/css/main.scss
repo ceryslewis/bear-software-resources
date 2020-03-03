@@ -78,6 +78,7 @@ a {
   }
 
   button {
+    /*
     position: absolute;
     height: 100%;
     right: 0;
@@ -111,7 +112,7 @@ a {
 
     &:hover::after {
       transform: scale(1.075);
-    }
+    } */
   }
 
   .hamburger {
