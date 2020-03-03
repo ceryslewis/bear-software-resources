@@ -115,7 +115,7 @@ a {
   }
 
   .hamburger {
-    position: absolute;
+    right: 20px;
     width: 32px;
     height: 4px;
     background: #fff;
@@ -124,7 +124,7 @@ a {
     &:before,
     &:after {
       content: '';
-      position: relative;
+      position: absolute;
       left: 0;
       width: 32px;
       height: 4px;
