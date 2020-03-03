@@ -22,7 +22,7 @@
         </div>
 
         <nav class="greedy-nav">
-            <button><div class="hamburger"></div></button>
+            <div class="hamburger"></div>
             <ul class='visible-links'>
                 <li></li>
             {% for category in site.data.navigation %}
@@ -34,7 +34,7 @@
                     <li>
                     {% if category.multilevel %}
                         <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
-                        <ul>
+                        <ul class="dd">
                             {% for subcategory in category.subcategories %}
                                 {% if subcategory.subhref contains '://' %}
                                     {% assign url = subcategory.subhref %}
