@@ -8,10 +8,6 @@
 @import "bootstrap-4-jekyll/bootstrap-4-jekyll";
 @import "bootstrap_customization";
 
-@color-1: #ff9800;
-@color-2: #f57c00;
-@color-3: #ef6c00;
-
 body {
   min-width: 320px;
   padding: 30px;
@@ -53,11 +49,11 @@ a {
     padding: 20px 30px;
     background: #fff;
     font-size: 18px;
-    color: @color-1;
+    color: #ff9800;
     text-decoration: none;
 
     &:hover {
-      color: @color-3;
+      color: #ef6c00;
     }
   }
 
@@ -68,12 +64,12 @@ a {
     padding: 0 15px;
     border: 0;
     outline: none;
-    background-color: @color-2;
+    background-color: #f57c00;
     color: #fff;
     cursor: pointer;
 
     &:hover {
-      background-color: @color-3;
+      background-color: #ef6c00;
     }
 
     &::after {
@@ -84,7 +80,7 @@ a {
       left: -16px;
       top: 12px;
       text-align: center;
-      background-color: @color-3;
+      background-color: #ef6c00;
       color: #fff;
       font-size: 14px;
       line-height: 28px;
@@ -129,7 +125,7 @@ a {
 
     li {
       display: table-cell;
-      border-left: 1px solid @color-1;
+      border-left: 1px solid #ff9800;
     }
   }
 
@@ -140,13 +136,13 @@ a {
 
     li {
       display: block;
-      border-top: 1px solid @color-2;
+      border-top: 1px solid #f57c00;
     }
   }
 
   .visible-links li:first-child {
     font-weight: bold;
-    a { color: @color-1 !important; }
+    a { color: #ff9800 !important; }
   }
 
   .hidden {
