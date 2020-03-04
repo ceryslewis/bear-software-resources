@@ -14,7 +14,7 @@
 }
 
 #header {
-    overflow: hidden;
+    overflow: visible    ;
     background-color: #374147;
     top: 0;
     left: 0;    
@@ -92,6 +92,11 @@ table { margin-bottom: 20px; }
 *,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
     margin: 0;
     padding: 0;
+}
+.masthead__menu {
+    display: block;
+    z-index: 10000;
+    background: #9ca3da;
 }
 
 article,aside,figure,footer,header,hgroup,nav,section {
