@@ -21,7 +21,7 @@
     padding: 1.3em 1em;
 }
 
-h1 a {
+h1 a, h1 a:hover {
     color: white;
 }
 
@@ -41,8 +41,9 @@ h1 a {
     display: block;
     width: 25%;
     float: left;
-    padding: 1.5em 1em;
+    padding: 1em 1em 1.5em 1em;
 }
+
 #bear-logo, #bear-logo img {
     float: right;
 }
@@ -79,7 +80,7 @@ th { background-color: #d7f7d5; }
 
 table { margin-bottom: 20px; }
 
-#content {  width: 80%; }
+#content {  width: 100%; position: relative; top: 20px; }
 
 #uob-logo a img, #bear-logo a img {
     height: 3.2em;
@@ -102,7 +103,11 @@ table { margin-bottom: 20px; }
 .masthead__menu {
     display: block;
     z-index: 10000;
-    background: #9ca3da;
+    background: #374147;
+    float: right;
+    position: relative;
+    top: -4px;
+    width: 100%;
 }
 
 article,aside,figure,footer,header,hgroup,nav,section {
