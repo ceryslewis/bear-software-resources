@@ -381,7 +381,7 @@ nav {
 }
 
 @media (max-width: 320px) {
-    #title h1 {
-        font-size: 0.8em;
+    #bear-logo, #uob-logo {
+        display: none;
     }
 }
