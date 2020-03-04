@@ -20,36 +20,22 @@
             {% endunless %}
         </div>
 
-        <nav class="greedy-nav">
-            <button><div class="hamburger"></div></button>
-            <ul class='visible-links'>
-                <li></li>
+
+        <nav id="links_menu">
+            <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+            <ul class="menu">
             {% for category in site.data.navigation %}
-                {% if category.href contains '#' %}
-                    {% assign url = category.href %}
+                <li><a href="#">{{ category.href }}</a>
+                {% if category.subcategories %}
+                    <ul class="sub-menu">
+                    {% for subcategory in category.subcategories %}
+                        <li><a href="{{ subcategory.subhref }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a></li>
+                    {% endfor %}
+                    </ul>
                 {% endif %}
-                    <li>
-                    {% if category.multilevel %}
-                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }} ▼</a>
-                        <ul class="dd">
-                            {% for subcategory in category.subcategories %}
-                                {% if subcategory.subhref contains '://' %}
-                                    {% assign url = subcategory.subhref %}
-                                {% else %}
-                                    {% assign url = subcategory.subhref | relative_url %}
-                                {% endif %}
-                                <li class="">
-                                    <a href="{{ url }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a>
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    {% else %}
-                        <a href="{{ url }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
-                    {% endif %}
                 </li>
-                {% endfor %}
+            {% endfor %}
             </ul>
-            <ul class="hidden-links hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</ul>
         </nav>
 
     </div>
