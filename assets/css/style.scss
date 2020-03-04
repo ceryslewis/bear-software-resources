@@ -30,10 +30,13 @@ h1 a, h1 a:hover {
     margin: 0 auto;
     text-align: center;
     float: left;
+    position: relative;
+    top: 16px;
 }
 
 #title h1 a, #title h1 a:hover {
     text-decoration: none;
+    font-size: 2.3em;
 }
 
 #uob-logo, #bear-logo {
@@ -134,7 +137,6 @@ html {
 }
 
 a {
-    color: #BA0707;
     text-decoration: none;
 }
 
