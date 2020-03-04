@@ -311,6 +311,9 @@ nav {
 }
 
 @media (max-width: 767px) {
+    #title h1 {
+        font-size: 1.8em;
+    }
     .mainWrap {
         width: auto;
         padding: 50px 20px;
@@ -371,7 +374,14 @@ nav {
 }
 
 @media (max-width: 480px) {
+    #title h1 {
+        font-size: 1em;
+    }
+
 }
 
 @media (max-width: 320px) {
+    #title h1 {
+        font-size: 0.8em;
+    }
 }
