@@ -17,8 +17,7 @@
     overflow: visible    ;
     background-color: #374147;
     top: 0;
-    left: 0;    
-    padding: 1.3em 1em;
+    left: 0;
 }
 
 h1 a, h1 a:hover {
@@ -98,6 +97,8 @@ table { margin-bottom: 20px; }
 
 .masthead__logos {
     background: #72708e;
+    height: 100px;
+    padding: 1em
 }
 
 .masthead__menu {
@@ -145,6 +146,7 @@ body {
 nav {
     display: block;
     background: #374147;
+    float: right
 }
 
 .menu {
