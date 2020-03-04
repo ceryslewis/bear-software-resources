@@ -63,6 +63,7 @@ nav {
     padding: 0.5em 0;
     word-spacing: .08em;
     text-align: center;
+    padding: 1em;
 }
 
 #footer.shortpage {
@@ -79,7 +80,14 @@ th { background-color: #d7f7d5; }
 
 table { margin-bottom: 20px; }
 
-#content {  width: 100%; position: relative; top: 20px; }
+#content {
+    width: 100%;
+    position: relative;
+    top: 20px;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+}
 
 #uob-logo a img, #bear-logo a img {
     height: 3.2em;
