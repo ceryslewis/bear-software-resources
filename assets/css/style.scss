@@ -89,10 +89,16 @@ table { margin-bottom: 20px; }
 .links_menu {
     display: block;
 }
+
 *,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
     margin: 0;
     padding: 0;
 }
+
+.masthead__logos {
+    background: #72708e;
+}
+
 .masthead__menu {
     display: block;
     z-index: 10000;
