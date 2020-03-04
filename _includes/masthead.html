@@ -1,5 +1,6 @@
 <header id="header">
     <div class="container">
+
         <div class="masthead__logos">
             {% unless site.uob_logo_url == empty %}
             <div id="uob-logo">
@@ -20,23 +21,23 @@
             {% endunless %}
         </div>
 
-
-        <nav id="links_menu">
-            <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
-            <ul class="menu">
-            {% for category in site.data.navigation %}
-                <li><a href="{{ category.href }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
-                {% if category.subcategories %}
-                    <ul class="sub-menu">
-                    {% for subcategory in category.subcategories %}
-                        <li><a href="{{ subcategory.subhref }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a></li>
-                    {% endfor %}
-                    </ul>
-                {% endif %}
-                </li>
-            {% endfor %}
-            </ul>
-        </nav>
-
+        <div class="masthead__logos">
+            <nav id="links_menu">
+                <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+                <ul class="menu">
+                {% for category in site.data.navigation %}
+                    <li><a href="{{ category.href }}" {% if category.description %}title="{{ category.description }}"{% endif %}>{{ category.title }}</a>
+                    {% if category.subcategories %}
+                        <ul class="sub-menu">
+                        {% for subcategory in category.subcategories %}
+                            <li><a href="{{ subcategory.subhref }}" {% if subcategory.description %}title="{{ subcategory.description }}"{% endif %}>{{ subcategory.subtitle }}</a></li>
+                        {% endfor %}
+                        </ul>
+                    {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+            </nav>
+        </div>
     </div>
 </header>
