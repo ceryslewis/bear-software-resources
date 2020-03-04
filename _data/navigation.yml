@@ -17,6 +17,10 @@
     - subtitle: "HPC"
       subhref: "/topics/hpc/"
       subdescription:
+- title: "Authors"
+  href: "/authors/"
+  description: ""
+  multilevel: false
 - title: "Guides"
   href: "/guides/"
   description: ""
