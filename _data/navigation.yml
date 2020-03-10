@@ -4,7 +4,7 @@
   description: ""
   multilevel: false
 - title: "Topic areas"
-  href: "#topics"
+  href: "/bear-software-resources/topics/index.html"
   description: ""
   multilevel: true
   subcategories:
