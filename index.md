@@ -1,13 +1,14 @@
 
 ## Databases  
+<br />
 
-[How Design a Database: Considerations and Good Practices when Creating a Database](./how-to-design-a-database.html)        
+[How Design a Database: Considerations and Good Practices when Creating a Database](./databases/how-to-design-a-database.md) <br /><br />       
     
     
     
 ## HPC  
-    
-    
-[TensorFlow Large Model Support Usage](./lms.html)      
+<br />
+
+[TensorFlow Large Model Support Usage](./hpc/lms.md)  <br /><br />    
 
 
