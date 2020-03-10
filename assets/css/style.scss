@@ -82,16 +82,6 @@ nav {
     color: #fff;
 }
 
-th {
-    background-color: #a6bba3;
-    color: #fff;
-    padding: 0.5em !important;
-}
-td {
-    text-align: center;
-    padding: 0.5em !important;
-}
-
 table { margin-bottom: 20px; }
 
 #content {
@@ -499,3 +489,13 @@ $table-header-border: 1px solid #FFF;
   $header-background-color: $table-header-background-color,
   $header-text-color: $table-header-text-color,
   $header-border: $table-header-border);
+
+th {
+  background-color: #a6bba3;
+  color: #fff;
+  padding: 0.5em !important;
+}
+td {
+  text-align: center;
+  padding: 0.5em !important;
+}
