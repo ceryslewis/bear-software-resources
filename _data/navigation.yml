@@ -9,13 +9,13 @@
   multilevel: true
   subcategories:
     - subtitle: "Databases"
-      subhref: "/topics/database/index.md"
+      subhref: "/topics/database/index.html"
       subdescription:
     - subtitle: "Coding"
-      subhref: "/topics/coding/index.md"
+      subhref: "/topics/coding/index.html"
       subdescription:
     - subtitle: "HPC"
-      subhref: "/topics/hpc/index.md"
+      subhref: "/topics/hpc/index.html"
       subdescription:
 - title: "Authors"
   href: "/authors/"
