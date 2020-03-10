@@ -497,7 +497,15 @@ th {
   color: #fff;
   padding: 0.5em !important;
 }
+
 td {
   text-align: center;
   padding: 0.5em !important;
+}
+
+ul {
+    position: relative;
+    left: 40px;
+    font-size: 0.95rem;
+    padding: 0.5rem 0;
 }
