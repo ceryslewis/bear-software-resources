@@ -82,7 +82,12 @@ nav {
     color: #fff;
 }
 
-th { background-color: #a6bba3; color: #ffffff; padding: 1.3em !important; }
+th {
+    background-color: #a6bba3;
+    color: #fff;
+    padding: 0.5em !important;
+}
+td { text-align: center; }
 
 table { margin-bottom: 20px; }
 
