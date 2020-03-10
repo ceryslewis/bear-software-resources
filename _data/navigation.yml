@@ -1,6 +1,6 @@
 # main links links
 - title: "About BEAR Resources"
-  href: "/about/"
+  href: "/bear-software-resources/about.html"
   description: ""
   multilevel: false
 - title: "Topic areas"
@@ -9,7 +9,7 @@
   multilevel: true
   subcategories:
     - subtitle: "Databases"
-      subhref: "/bear-software-resources/topics/database/index.html"
+      subhref: "/bear-software-resources/topics/databases/index.html"
       subdescription:
     - subtitle: "Coding"
       subhref: "/bear-software-resources/topics/coding/index.html"
@@ -18,10 +18,10 @@
       subhref: "/bear-software-resources/topics/hpc/index.html"
       subdescription:
 - title: "Authors"
-  href: "/authors/"
+  href: "/bear-software-resources/authors/index.html"
   description: ""
   multilevel: false
 - title: "Guides"
-  href: "/guides/"
+  href: "/bear-software-resources/guides/index.html"
   description: ""
   multilevel: false
