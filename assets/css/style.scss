@@ -108,6 +108,7 @@ table { margin-bottom: 20px; }
 *,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
     margin: 0;
     padding: 0;
+    line-height: 1.8;
 }
 
 .masthead__logos {
@@ -149,11 +150,7 @@ a:hover {
 }
 
 body {
-    background: #e5e5e5;
-    color: #a6bba3;
-    font: 14px "Open Sans",Helvetica,Arial,sans-serif;
     -webkit-font-smoothing: antialiased;
-    line-height: 1;
     width: 100%;
 }
 
