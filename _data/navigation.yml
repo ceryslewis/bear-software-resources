@@ -9,7 +9,7 @@
   multilevel: true
   subcategories:
     - subtitle: "Databases"
-      subhref: "/bear-software-resources//topics/database/index.html"
+      subhref: "/bear-software-resources/topics/database/index.html"
       subdescription:
     - subtitle: "Coding"
       subhref: "/bear-software-resources/topics/coding/index.html"
