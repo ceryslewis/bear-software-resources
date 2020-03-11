@@ -306,6 +306,10 @@ nav {
     a.homer {
         background: #a6bba3;
     }
+    #title h1 {
+        top: 12px;
+        position: relative;
+    }
 }
 
 @media (max-width: 767px) {
@@ -369,9 +373,14 @@ nav {
     .menu li>ul ul:hover {
         transform: initial;
     }
-    line-height: 1.4;
+
+    #title h1 {
+        line-height: 1.4;
+        top: 0;
+        position: relative;
+    }
 }
-@media (max-width: 540px) {
+@media (max-width: 560px) {
     line-height: 1;
 }
 @media (max-width: 480px) {
