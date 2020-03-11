@@ -381,7 +381,7 @@ nav {
     }
 }
 @media (max-width: 534px) {
-    #title h1, #title h1 a
+    #title h1, #title h1 a {
         line-height: 1 !important;
         top: 0;
         position: relative;
