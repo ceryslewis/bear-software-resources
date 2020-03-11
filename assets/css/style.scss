@@ -388,7 +388,8 @@ nav {
     }
 }
 @media (max-width: 480px) {
-    h1,
+    *, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3,
+    h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td,
     #title h1 {
         font-size: 1.3em;
     }
