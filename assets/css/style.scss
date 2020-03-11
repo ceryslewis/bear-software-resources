@@ -108,7 +108,7 @@ table {
 *,html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,label,fieldset,input,p,blockquote,th,td {
     margin: 0;
     padding: 0;
-    line-height: 1.8;
+    line-height: 1;
 }
 
 .masthead__logos {
@@ -375,7 +375,6 @@ nav {
     }
 
     #title h1 {
-        line-height: 1.4;
         top: 10px;
         position: relative;
     }
