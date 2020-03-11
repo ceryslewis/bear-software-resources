@@ -328,7 +328,7 @@ nav {
     .responsive-menu {
         display: block;
     }
-
+    nav { width: 100%; }
     nav {
         margin: 0;
         background: none;
@@ -391,7 +391,6 @@ nav {
     #title h1 {
         font-size: 1.3em;
     }
-    nav { width: 100%; }
     #content { padding: 2rem; }
 
     line-height: 1;
