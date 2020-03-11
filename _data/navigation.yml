@@ -1,4 +1,8 @@
 # main links links
+- title: "⌂ Home"
+  href: "/bear-software-resources/"
+  description: ""
+  multilevel: false
 - title: "About BEAR Resources"
   href: "/bear-software-resources/about.html"
   description: ""
