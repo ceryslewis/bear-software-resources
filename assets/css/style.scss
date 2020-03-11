@@ -407,7 +407,11 @@ nav {
 
     line-height: 1;
 }
-
+@media (max-width: 452px) {
+    #title h1 {
+        top: 16px;
+    }
+}
 @media (max-width: 320px) {
     #title {
         width: 100%;
