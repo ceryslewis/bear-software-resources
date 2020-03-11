@@ -12,7 +12,8 @@
     </div>
     <script type="text/javascript">
     $( document ).ready(function() {
-      if $( window ).height() > 800 {
+      var w = $(window).width();
+      if(w > 767) {
 
           var min = $( window ).height() - ($("#header").height() + $("#footer").height());
           if($("#content").height() < min) {
