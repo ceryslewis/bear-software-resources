@@ -381,7 +381,11 @@ nav {
     }
 }
 @media (max-width: 534px) {
-    line-height: 1;
+    #title h1 {
+        line-height: 1;
+        top: 0;
+        position: relative;
+    }
 }
 @media (max-width: 480px) {
     #title h1 {
