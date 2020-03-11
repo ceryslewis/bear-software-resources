@@ -390,7 +390,7 @@ nav {
      }
 }
 @media (max-width: 551px) {
-     #title h1 { top: 26px; }
+     #title h1 { top: 14px; }
      #title h1, #title h1 a {
          line-height: 1 !important;
          top: 3;
@@ -401,7 +401,7 @@ nav {
 @media (max-width: 480px) {
     #title h1 {
         font-size: 1.1em;
-        top: 10px;
+        top: 26px;
     }
     #content { padding: 2rem; }
 
