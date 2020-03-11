@@ -36,12 +36,13 @@ h1 a, h1 a:hover {
 
 #title h1 {
     font-size: 2.3em;
+    top: 13px;
+    position: relative;s
 }
 
 #title h1 a, #title h1 a:hover {
     text-decoration: none;
 }
-
 #uob-logo, #bear-logo {
     display: block;
     width: 25%;
@@ -94,6 +95,7 @@ table {
     margin: 0 auto;
     font-size: 1.1rem;
     color: #5a5a5a;
+    line-height: 1.8;
 }
 
 #uob-logo a img, #bear-logo a img {
