@@ -398,6 +398,9 @@ nav {
          font-size: 1.3em;
      }
 }
+@media (max-width: 551px) {
+     #title h1 { top: 6px; }
+}
 @media (max-width: 480px) {
     #title h1 {
         font-size: 1.1em;
