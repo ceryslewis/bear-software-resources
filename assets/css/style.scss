@@ -402,18 +402,7 @@ nav {
      #title h1 { top: 9px; }
 }
 @media (max-width: 480px) {
-    #title h1 {
-        font-size: 1.1em;
-        top: 26px;
-    }
-    #content { padding: 2rem; }
-}
-@media (max-width: 451px) {
-    #title h1 {
-        top: 16px;
-    }
-}
-@media (max-width: 320px) {
+
     #title {
         width: 100%;
     }
